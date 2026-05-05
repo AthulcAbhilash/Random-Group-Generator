@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Group Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="static/images/favicon.png">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="static/images/logo.png" class="logo">
+        <div>
+            <h1>Random Group Generator</h1>
+            <p class="subtitle">Create fair and instant groups in seconds</p>
+        </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="card">
+
+        <textarea id="nameInput" placeholder="Enter names (comma or new line) or upload file"></textarea>
+
+        <!-- CUSTOM FILE BUTTON -->
+        <label class="file-btn">
+            Upload File
+            <input type="file" id="fileInput" accept=".txt">
+        </label>
+
+        <div class="controls">
+            <div>
+                <label>Groups</label>
+                <input type="number" id="groupCount" value="3" min="1">
+            </div>
+
+            <div>
+                <label>Total</label>
+                <span id="totalCount">0</span>
+            </div>
+        </div>
+
+        <button id="generateBtn">Generate Groups</button>
+
+    </div>
+
+    <!-- OUTPUT -->
+    <div id="groupOutput" class="output"></div>
+
+    <!-- ACTIONS -->
+    <div class="actions hidden" id="actions">
+        <button id="shuffleBtn">🔁 Regenerate</button>
+        <button id="copyBtn">📋 Copy</button>
+    </div>
+
+</div>
+
+<script src="static/script.js"></script>
+
+</body>
+</html>

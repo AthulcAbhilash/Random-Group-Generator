@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #1a1040, #2a0f5c, #3b1e7a);
+    color: #f5f7fb;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #c2bdf0;
+    font-size: 14px;
+}
+
+.card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background: #1a2338;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.file-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #6ea8fe, #8c52ff);
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.file-btn input {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.controls input {
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background: #1a2338;
+    color: white;
+}
+
+button {
+    background: linear-gradient(135deg, #6ea8fe, #8c52ff);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.output {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.group-card:nth-child(odd) {
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+}
+
+.group-card:nth-child(even) {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.group-card {
+    border-radius: 16px;
+    padding: 15px;
+    color: white;
+    animation: fadeIn 0.3s ease;
+}
+
+.group-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
